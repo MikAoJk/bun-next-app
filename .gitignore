@@ -33,3 +33,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# IntelliJ based IDEs
+*.iml
+.idea
+
+#build folder
+.build
