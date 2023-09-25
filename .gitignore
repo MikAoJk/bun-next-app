@@ -39,7 +39,7 @@ next-env.d.ts
 .idea
 
 #build folder
-.build
+.out
 
 #bun lock file
 bun.lockb

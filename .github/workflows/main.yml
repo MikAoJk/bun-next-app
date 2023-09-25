@@ -15,9 +15,7 @@ jobs:
       - name: Install packages
         run: bun install
       - name: Build
-        run: bun build --target bun src/app/page.tsx --compile --outfile .build/index.ts
-      - name: Export static files
-        run: bun export
+        run: bun build --target bun src/app/page.tsx --compile --outfile .out/index.ts
       - name: Add .nojekyll file
         run: touch ./out/.nojekyll
       - name: Deploy🚀
