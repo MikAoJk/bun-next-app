@@ -1,4 +1,4 @@
-name: build and deploy
+name: build
 on: push
 
 jobs:
@@ -15,9 +15,4 @@ jobs:
       - name: Install packages
         run: bun install
       - name: Build
-        run: bun build --target bun src/app/page.tsx --compile --outfile /out/index.ts
-      - name: Deploy🚀
-        uses: JamesIves/github-pages-deploy-action@v4.4.3
-        with:
-          branch: gh-pages
-          folder: out
+        run: bun build --target bun src/app/page.tsx --compile --outfile .out/index.ts
