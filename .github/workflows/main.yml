@@ -16,8 +16,6 @@ jobs:
         run: bun install
       - name: Build
         run: bun build --target bun src/app/page.tsx --compile --outfile .out/index.ts
-      - name: Add .nojekyll file
-        run: touch ./out/.nojekyll
       - name: Deploy🚀
         uses: JamesIves/github-pages-deploy-action@v4.4.3
         with:
