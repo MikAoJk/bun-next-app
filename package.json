@@ -1,12 +1,14 @@
 {
   "name": "bun-next-app",
   "version": "0.1.0",
+  "homepage": "https://mikaojk.github.io/bun-next-app",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export"
   },
   "dependencies": {
     "@types/node": "20.6.5",

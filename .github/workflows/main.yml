@@ -1,12 +1,27 @@
-name: main
+name: build and deploy
 on: push
 
 jobs:
   build:
     name: build
     runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_BASE_PATH: /bun-next-app
     steps:
-      - uses: actions/checkout@v3
-      - uses: oven-sh/setup-bun@v1
-      - run: bun install
-      - run: bun run build
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: use bun v1
+        uses: oven-sh/setup-bun@v1
+      - name: Install packages
+        run: bun install
+      - name: Build
+        run: bun build
+      - name: Export static files
+        run: bun export
+      - name: Add .nojekyll file
+        run: touch ./out/.nojekyll
+      - name: Deploy🚀
+        uses: JamesIves/github-pages-deploy-action@v4.4.3
+        with:
+          branch: gh-pages
+          folder: out
