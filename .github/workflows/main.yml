@@ -1,6 +1,9 @@
 name: build
 on: push
 
+permissions:
+  contents: write
+
 jobs:
   build:
     name: build
