@@ -10,7 +10,7 @@
 ### Prerequisites
 Make sure you have bun installed
 See [bun Installation](https://bun.sh/docs/installation) on how to install it locally
-You can check which bun version you have installed using this command:
+You can check which bun version you have installed
 ```bash
 bun --version
 ```
