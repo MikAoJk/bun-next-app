@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: use bun v1
+      - name: swtup bun
         uses: oven-sh/setup-bun@v1
       - name: Install packages
         run: bun install
@@ -26,5 +26,3 @@ jobs:
         with:
           branch: gh-pages
           folder: out
-      - name: Build
-        run: bun build --target bun src/app/page.tsx --compile --outfile .out/index.ts
