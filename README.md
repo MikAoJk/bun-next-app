@@ -25,6 +25,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
+## Deployed to github pages 
+The application is live at: https://mikaojk.github.io/bun-next-app
+
 ## Contact
 
 This project is maintained by [CODEOWNERS](CODEOWNERS)
