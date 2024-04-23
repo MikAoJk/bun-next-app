@@ -4,7 +4,7 @@ const nextConfig = {
     basePath: process.env.NEXT_PUBLIC_BASE_PATH,
     images: {
         loader: 'akamai',
-        path: '/public'
+        path: '/'
     },
     output: 'export'
 }
