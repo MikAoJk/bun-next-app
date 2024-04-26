@@ -1,0 +1,31 @@
+name: build
+on:
+  push:
+    branches:
+      - '**'
+      - '!main'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_BASE_PATH: /bun-next-app
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: setup bun
+        uses: oven-sh/setup-bun@v1
+      - name: Install packages
+        run: bun install
+      - name: Build
+        run: bun run build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./out
