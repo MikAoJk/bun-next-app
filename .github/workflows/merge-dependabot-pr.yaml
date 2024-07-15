@@ -102,7 +102,7 @@ jobs:
                     {
                         owner: context.repo.owner,
                         repo: context.repo.repo,
-                        workflow_id: 'build-and-deploy.yaml',
+                        workflow_id: 'main.yml',
                         ref: 'main',
                     }
                 )
