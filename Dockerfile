@@ -1,6 +1,6 @@
 FROM oven/bun:latest
 
-WORKDIR /app/next-app
+WORKDIR /app
 
 COPY package.json ./
 COPY bun.lockb ./
