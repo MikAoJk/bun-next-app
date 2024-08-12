@@ -15,7 +15,12 @@ You can check which bun version you have installed
 bun --version
 ```
 
-First, run the development server:
+Run tests
+```bash
+bun test
+```
+
+Then, run the development server:
 
 ```bash
 bun dev

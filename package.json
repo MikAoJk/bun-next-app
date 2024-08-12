@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export"
+    "export": "next export",
+    "test": "vitest"
   },
   "dependencies": {
     "@types/node": "22.2.0",
@@ -23,5 +24,12 @@
     "react-dom": "18.3.1",
     "tailwindcss": "3.4.9",
     "typescript": "5.5.4"
+  },
+  "devDependencies": {
+    "@happy-dom/global-registrator": "^14.12.3",
+    "@testing-library/react": "^16.0.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "jsdom": "^24.1.1",
+    "vitest": "^2.0.5"
   }
 }
