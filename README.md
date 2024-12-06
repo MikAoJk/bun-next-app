@@ -15,6 +15,11 @@ You can check which bun version you have installed
 bun --version
 ```
 
+install deps
+```bash
+bun install
+```
+
 Run tests
 ```bash
 bun test
