@@ -26,7 +26,7 @@
     "typescript": "5.7.2"
   },
   "devDependencies": {
-    "@happy-dom/global-registrator": "^15.11.7",
+    "@happy-dom/global-registrator": "^16.0.0",
     "@testing-library/react": "^16.0.0",
     "@vitejs/plugin-react": "^4.3.4",
     "jsdom": "^25.0.0",
